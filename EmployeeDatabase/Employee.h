@@ -2,7 +2,7 @@
 #ifndef EMPLOYEE_H
 #define EMPLOYEE_H
 
-#include <string>
+#include <iostream>
 
 class Employee
 {
@@ -13,7 +13,7 @@ public:
 
 	virtual void addEmployee() = 0;
 
-protected:
+private:
 	int mSalary;
 	std::string mFirstName;
 	std::string mLastName;

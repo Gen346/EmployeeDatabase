@@ -123,10 +123,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="EmployeeDatabase.cpp" />
+    <ClCompile Include="Employee.cpp" />
+    <ClCompile Include="Engineer.cpp" />
+    <ClCompile Include="Manager.cpp" />
+    <ClCompile Include="Program.cpp" />
+    <ClCompile Include="Researcher.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="IEmployee.h" />
+    <ClInclude Include="Employee.h" />
+    <ClInclude Include="Engineer.h" />
+    <ClInclude Include="Manager.h" />
+    <ClInclude Include="Researcher.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

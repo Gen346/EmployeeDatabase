@@ -7,10 +7,14 @@
 class Manager : public Employee
 {
 public:
+	Manager();
 	Manager(int salary, std::string firstName, std::string lastName, int meetingPerWeek, int vacationPerYear);
-	~Manager();
+	~Manager() override;
 
 	void addEmployee() override;
+
+	static Employee* createEmployee();
+
 
 protected:
 	int mMeetingPerWeek = 0;
