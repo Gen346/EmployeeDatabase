@@ -1,0 +1,19 @@
+---Manager---
+First name: Maria
+Second name: Rsurkan
+Salary: 10
+Meetings per week: 12
+Vacation days per year: 12
+---Engineer---
+First name: Eugene
+Second name: Kosorukov
+Salary: 12300000$
+Type of engineer: 
+Experience: 1232
+Know C++: 0
+---Researcher---
+First name: Daniil
+Second name: Meluankov
+Salary: 10000$
+Name of home university: ONU
+Research topic: Physics
