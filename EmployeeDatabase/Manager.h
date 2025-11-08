@@ -7,14 +7,19 @@
 class Manager : public Employee
 {
 public:
+	/*<---Constructors and destructor--->*/
 	Manager();
 	Manager(int salary, std::string firstName, std::string lastName, int meetingPerWeek, int vacationPerYear);
 	~Manager() override;
 
-	void addEmployee() override;
+	/*<---Methods--->*/
+	Employee* addEmployee() override;
+	void printDetails() const override;
+	void saveEmployee(std::ostream& os) const override;
 
-	static Employee* createEmployee();
-
+	/*<-- - Getters--->*/
+	//int getMeetingPerWeek();
+	//int getVacationDaysPerYear();
 
 protected:
 	int mMeetingPerWeek = 0;

@@ -1,4 +1,5 @@
 #include "Manager.h"
+
 Manager::Manager()
 {
 
@@ -14,56 +15,57 @@ Manager::~Manager()
 }
 
 
-void Manager::addEmployee()
+Employee* Manager::addEmployee()
 {
 	std::string firstName = "";
 	std::string secondName = "";
 	int salary = 0;
 	int meetingsPerWeak = 0;
 	int vacationsInYear = 0;
-	std::cout << "Enter employee name: ";
+	std::cout << "Enter manager`s first name: ";
 	std::cin >> firstName;
 
-	std::cout << "Enter employee second name: ";
+	std::cout << "Enter manager`s second name: ";
 	std::cin >> secondName;
 
-	std::cout << "Enter employee salary: ";
+	std::cout << "Enter manager`s salary: ";
 	std::cin >> salary;
 
-	std::cout << "Enter managers meetings per weak: ";
+	std::cout << "Enter manager`s meetings per weak: ";
 	std::cin >> meetingsPerWeak;
 
-	std::cout << "Enter manager vacation days in year: ";
+	std::cout << "Enter manager`s vacation days in year: ";
 	std::cin >> vacationsInYear;
 
 	Employee* manager = new Manager(salary, firstName, secondName, meetingsPerWeak, vacationsInYear);
 
+	std::cout << "Manager added!\n";
+
+	return manager;
 }
 
-Employee* Manager::createEmployee()
+void Manager::saveEmployee(std::ostream& os) const
 {
-	std::string firstName = "";
-	std::string secondName = "";
-	int salary = 0;
-	int meetingsPerWeak = 0;
-	int vacationsInYear = 0;
-	std::cout << "Enter employee name: ";
-	std::cin >> firstName;
+	os << "---Manager---" << "\n";
 
-	std::cout << "Enter employee second name: ";
-	std::cin >> secondName;
+	os << "First name: " << getFirstName() << "\n";
+	os << "Second name: " << getSecondName() << "\n";
+	os << "Salary: " << getSalary() << "\n";
 
-	std::cout << "Enter employee salary: ";
-	std::cin >> salary;
+	os << "Meetings per week: " << mMeetingPerWeek << "\n";
+	os << "Vacation days per year: " << mVacationDaysPerYear << "\n";
+}
 
-	std::cout << "Enter managers meetings per weak: ";
-	std::cin >> meetingsPerWeak;
+void Manager::printDetails() const
+{
+	std::cout << "Type: manager" << "\n";
 
-	std::cout << "Enter manager vacation days in year: ";
-	std::cin >> vacationsInYear;
+	std::cout << "First name: " << getFirstName() << "\n";
+	std::cout << "Second name: " << getSecondName() << "\n";
+	std::cout << "Salary: " << getSalary() << "$" << "\n";
 
-	Employee* manager = new Manager(salary, firstName, secondName, meetingsPerWeak, vacationsInYear);
-
+	std::cout << "Meetings per week: " << mMeetingPerWeek << "\n";
+	std::cout << "Vacation days per year: " << mVacationDaysPerYear << "\n";
 }
 
 
