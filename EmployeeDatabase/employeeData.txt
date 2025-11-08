@@ -1,19 +1,19 @@
 ---Manager---
 First name: Maria
-Second name: Rsurkan
+Second name: Tsurkan
 Salary: 10
 Meetings per week: 12
 Vacation days per year: 12
 ---Engineer---
-First name: Eugene
-Second name: Kosorukov
+First name: Geneeu
+Second name: Tyap
 Salary: 12300000$
 Type of engineer: 
 Experience: 1232
 Know C++: 0
 ---Researcher---
 First name: Daniil
-Second name: Meluankov
+Second name: Mekyankov
 Salary: 10000$
 Name of home university: ONU
 Research topic: Physics
